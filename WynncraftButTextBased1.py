@@ -1,3 +1,12 @@
+#Creating info for mage class
+user_class = ("Nothing")
+class mage():
+    def __init__ (self):
+        self.name = ("Mage")
+        self.health = 100
+        self.mana = 20
+
+
 boolean = True
 
 while(boolean):
@@ -37,12 +46,50 @@ while(boolean):
     print ("MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNmNNmNNNNNMMMMMMMMMMMMMMMMNNNNNNNNmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM")
     print ("MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNmmNMMMMMMMMMMMMMMMMMMMMMMMMMMNmmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM")
     boolean = False
+#Basic character creation lines
+#The fav_color command will probably play a role in monster stuff
 def blank_line(lines):
     for i in range(lines):
         print ("")
 name = input("Hello adventurer! What is your name? ")
-blank_line(1)
-print ("Welcome to Wynncraft" + name + "! The text based adventure game!")
-blank_line(1)
 player_quest = input("What is your quest? ")
 fav_color = input("And what is your favorite color? ")
+blank_line(3)
+print ("Welcome to Wynncraft " + name + "! The text based adventure game!")
+#Picking a class time baby. Calling class niche because class is already a python command.
+print ("It is time for you to pick a class! Availible classes are mage, archer, assassin, and warrior.")
+print ("You can pick a class by typing the name or you can type to inspect a class.")
+niche = input("What class would you like? Or would you like to inspect a class?")
+def choose_class():
+    while True:
+        if niche == ("mage"):
+            print ("You are now a mage!")
+            global user_class
+            user_class = ("mage")
+            break
+        elif niche == ("archer"):
+            print ("You are now an archer!")
+            global user_class
+            user_class = ("archer")
+            break
+        elif niche == ("assassin"):
+            print ("You are now an assassin!")
+            global user_class
+            user_class = ("assassin")
+            break
+        elif niche == ("warrior"):
+            print ("You are now a warrior!")
+            global user_class
+            user_class = ("warrior")
+            break
+        elif niche == ("inspect"):
+            inspect_class = input("What class would you like to inspect?")
+            if inspect_class == mage:
+                print ("")
+
+#Creating characters empty inventory
+inventory = []
+choose_class()
+
+print ("Test")
+print (user_class)
