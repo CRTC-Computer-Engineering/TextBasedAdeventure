@@ -37,8 +37,12 @@ while(boolean):
     print ("MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNmNNmNNNNNMMMMMMMMMMMMMMMMNNNNNNNNmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM")
     print ("MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNmmNMMMMMMMMMMMMMMMMMMMMMMMMMMNmmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM")
     boolean = False
-
+def blank_line(lines):
+    for i in range(lines):
+        print ("")
 name = input("Hello adventurer! What is your name? ")
+blank_line(1)
 print ("Welcome to Wynncraft" + name + "! The text based adventure game!")
+blank_line(1)
 player_quest = input("What is your quest? ")
 fav_color = input("And what is your favorite color? ")
