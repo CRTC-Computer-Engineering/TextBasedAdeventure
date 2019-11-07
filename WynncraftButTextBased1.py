@@ -1,5 +1,6 @@
 #Creating info for mage class
 user_niche = ()
+user_object = ()
 class Mage():
     def __init__ (self):
         self.name = ("Mage")
@@ -7,12 +8,12 @@ class Mage():
         self.mana = 20
         self.attack = 10
         self.defence = 10
-
-        return self.name
-        return str(self.health)
-        return str(self.mana)
-        return str(self.attack)
-        return str(self.defence)
+    def print_all_things(self):
+        print ("Class: " + str(self.name))
+        print ("Health: " + str(self.health))
+        print ("Mana: " + str(self.mana))
+        print ("Attack: " + str(self.attack))
+        print ("Defence: " + str(self.defence))
 
 
 #Info for archer class
@@ -24,11 +25,6 @@ class Archer():
         self.attack = 14
         self.defence = 14
 
-        return self.name
-        return str(self.health)
-        return str(self.mana)
-        return str(self.attack)
-        return str(self.defence)
 #Info for assassin class
 class Assassin():
     def __init__ (self):
@@ -38,11 +34,7 @@ class Assassin():
         self.attack = 15
         selt.defence = 7
 
-        return self.name
-        return str(self.health)
-        return str(self.mana)
-        return str(self.attack)
-        return str(self.defence)
+
 #Info for warrior class
 class Warrior():
     def __init__ (self):
@@ -52,11 +44,7 @@ class Warrior():
         self.attack = 175
         self.defence = 150
 
-        return self.name
-        return str(self.health)
-        return str(self.mana)
-        return str(self.attack)
-        return str(self.defence)
+
 
 boolean = True
 
@@ -113,10 +101,11 @@ print ("You can pick a class by typing the name or you can type to inspect a cla
 niche = input("What class would you like? Or would you like to inspect a class?")
 def choose_class():
     global user_niche
+    global user_object
     while True:
         if niche == ("mage"):
             print ("You are now a mage!")
-
+            user_object = Mage()
             user_niche = ("mage")
             break
         elif niche == ("archer"):
@@ -136,8 +125,17 @@ def choose_class():
             break
         elif niche == ("inspect"):
             inspect_class = input("What class would you like to inspect?")
-            if inspect_class == mage:
-                print ("")
+            if inspect_class == ("mage"):
+                user_object = Mage()
+                user_object.print_all_things()
+                yesno = input("Would you like to inspect another class?(y/n) ")
+                if yesno == ("y"):
+                    continue
+                elif yesno == ("n"):
+                    break
+                else:
+                    print ("y and n are the only valid choices.")
+
 
 #Creating characters empty inventory
 inventory = []
