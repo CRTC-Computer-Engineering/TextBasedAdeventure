@@ -24,6 +24,12 @@ class Archer():
         self.mana = 12
         self.attack = 14
         self.defence = 14
+    def print_all_things(self):
+        print ("Class: " + str(self.name))
+        print ("Health: " + str(self.health))
+        print ("Mana: " + str(self.mana))
+        print ("Attack: " + str(self.attack))
+        print ("Defence: " + str(self.defence))
 
 #Info for assassin class
 class Assassin():
@@ -33,6 +39,12 @@ class Assassin():
         self.mana = 15
         self.attack = 15
         selt.defence = 7
+    def print_all_things(self):
+        print ("Class: " + str(self.name))
+        print ("Health: " + str(self.health))
+        print ("Mana: " + str(self.mana))
+        print ("Attack: " + str(self.attack))
+        print ("Defence: " + str(self.defence))
 
 
 #Info for warrior class
@@ -43,6 +55,12 @@ class Warrior():
         self.mana = 8
         self.attack = 175
         self.defence = 150
+    def print_all_things(self):
+        print ("Class: " + str(self.name))
+        print ("Health: " + str(self.health))
+        print ("Mana: " + str(self.mana))
+        print ("Attack: " + str(self.attack))
+        print ("Defence: " + str(self.defence))
 
 
 
@@ -135,7 +153,16 @@ def choose_class():
                     break
                 else:
                     print ("y and n are the only valid choices.")
-
+            elif inspect_class == ("archer"):
+                user_object = ()
+                user_object.print_all_things()
+                yesno = input("Would you like to inspect another class?(y/n) ")
+                if yesno == ("y"):
+                    continue
+                elif yesno == ("n"):
+                    break
+                else:
+                    print ("y and n are the only valid choices.")
 
 #Creating characters empty inventory
 inventory = []
