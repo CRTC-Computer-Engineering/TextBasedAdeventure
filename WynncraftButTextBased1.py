@@ -8,7 +8,29 @@ class mage():
         self.attack = 10
         self.defence = 10
 
+class archer():
+    def __init__ (self):
+        self.name = ("Archer")
+        self.health = 150
+        self.mana = 12
+        self.attack = 14
+        self.defence = 14
 
+class assassin():
+    def __init__ (self):
+        self.name = ("Assassin")
+        self.health = 75
+        self.mana = 15
+        self.attack = 15
+        selt.defence = 7
+
+class warrior():
+    def __init__ (self):
+        self.name = ("Warrior")
+        self.health = 175
+        self.mana = 8
+        self.attack = 175
+        self.defence = 150
 
 boolean = True
 
@@ -83,7 +105,7 @@ def choose_class():
             break
         elif niche == ("warrior"):
             print ("You are now a warrior!")
-            
+
             user_niche = ("warrior")
             break
         elif niche == ("inspect"):
