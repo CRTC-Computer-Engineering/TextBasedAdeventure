@@ -115,7 +115,7 @@ while(boolean):
 name = input("Hello adventurer! What is your name? ")
 player_quest = input("What is your quest? ")
 fav_color = input("And what is your favorite color? ")
-blank_line(3)
+TextBasedAdventureFunctions.blank_line(3)
 print ("Welcome to Wynncraft " + name + "! The text based adventure game!")
 #Picking a class time baby. Calling class niche because class is already a python command.
 print ("It is time for you to pick a class! Availible classes are mage, archer, assassin, and warrior.")
