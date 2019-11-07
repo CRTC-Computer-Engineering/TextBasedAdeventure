@@ -120,57 +120,9 @@ print ("Welcome to Wynncraft " + name + "! The text based adventure game!")
 #Picking a class time baby. Calling class niche because class is already a python command.
 print ("It is time for you to pick a class! Availible classes are mage, archer, assassin, and warrior.")
 print ("You can pick a class by typing the name or you can type to inspect a class.")
-niche = input("What class would you like? Or would you like to inspect a class?")
-def choose_class():
-    global user_niche
-    global user_object
-    while True:
-        if niche == ("mage"):
-            print ("You are now a mage!")
-            user_object = Mage()
-            user_niche = ("mage")
-            break
-        elif niche == ("archer"):
-            print ("You are now an archer!")
+TextBasedAdventureFunctions.choose_class()
 
-            user_niche = ("archer")
-            break
-        elif niche == ("assassin"):
-            print ("You are now an assassin!")
 
-            user_niche = ("assassin")
-            break
-        elif niche == ("warrior"):
-            print ("You are now a warrior!")
-
-            user_niche = ("warrior")
-            break
-        elif niche == ("inspect"):
-            inspect_class = input("What class would you like to inspect?")
-            if inspect_class == ("mage"):
-                user_object = Mage()
-                user_object.print_all_things()
-                yesno = input("Would you like to inspect another class?(y/n) ")
-                if yesno == ("y"):
-                    continue
-                elif yesno == ("n"):
-                    break
-                else:
-                    print ("y and n are the only valid choices.")
-            elif inspect_class == ("archer"):
-                user_object = ()
-                user_object.print_all_things()
-                yesno = input("Would you like to inspect another class?(y/n) ")
-                if yesno == ("y"):
-                    continue
-                elif yesno == ("n"):
-                    break
-                else:
-                    print ("y and n are the only valid choices.")
 
 #Creating characters empty inventory
 inventory = []
-choose_class()
-
-print ("Test")
-print (user_niche)
