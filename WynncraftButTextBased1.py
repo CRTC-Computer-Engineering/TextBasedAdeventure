@@ -1,72 +1,9 @@
 #Importing the functions doc
 import TextBasedAdventureFunctions
+import classes
 
 
 
-
-#Creating info for mage class
-user_niche = ()
-user_object = ()
-class Mage():
-    def __init__ (self):
-        self.name = ("Mage")
-        self.health = 100
-        self.mana = 20
-        self.attack = 10
-        self.defence = 10
-    def print_all_things(self):
-        print ("Class: " + str(self.name))
-        print ("Health: " + str(self.health))
-        print ("Mana: " + str(self.mana))
-        print ("Attack: " + str(self.attack))
-        print ("Defence: " + str(self.defence))
-
-
-#Info for archer class
-class Archer():
-    def __init__ (self):
-        self.name = ("Archer")
-        self.health = 150
-        self.mana = 12
-        self.attack = 14
-        self.defence = 14
-    def print_all_things(self):
-        print ("Class: " + str(self.name))
-        print ("Health: " + str(self.health))
-        print ("Mana: " + str(self.mana))
-        print ("Attack: " + str(self.attack))
-        print ("Defence: " + str(self.defence))
-
-#Info for assassin class
-class Assassin():
-    def __init__ (self):
-        self.name = ("Assassin")
-        self.health = 75
-        self.mana = 15
-        self.attack = 15
-        selt.defence = 7
-    def print_all_things(self):
-        print ("Class: " + str(self.name))
-        print ("Health: " + str(self.health))
-        print ("Mana: " + str(self.mana))
-        print ("Attack: " + str(self.attack))
-        print ("Defence: " + str(self.defence))
-
-
-#Info for warrior class
-class Warrior():
-    def __init__ (self):
-        self.name = ("Warrior")
-        self.health = 175
-        self.mana = 8
-        self.attack = 175
-        self.defence = 150
-    def print_all_things(self):
-        print ("Class: " + str(self.name))
-        print ("Health: " + str(self.health))
-        print ("Mana: " + str(self.mana))
-        print ("Attack: " + str(self.attack))
-        print ("Defence: " + str(self.defence))
 
 
 
@@ -121,6 +58,7 @@ print ("Welcome to Wynncraft " + name + "! The text based adventure game!")
 print ("It is time for you to pick a class! Availible classes are mage, archer, assassin, and warrior.")
 print ("You can pick a class by typing the name or you can type to inspect a class.")
 TextBasedAdventureFunctions.choose_class()
+
 
 
 
