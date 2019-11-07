@@ -1,6 +1,6 @@
 #Creating info for mage class
 user_niche = ()
-class mage():
+class Mage():
     def __init__ (self):
         self.name = ("Mage")
         self.health = 100
@@ -8,7 +8,15 @@ class mage():
         self.attack = 10
         self.defence = 10
 
-class archer():
+        return self.name
+        return str(self.health)
+        return str(self.mana)
+        return str(self.attack)
+        return str(self.defence)
+
+
+#Info for archer class
+class Archer():
     def __init__ (self):
         self.name = ("Archer")
         self.health = 150
@@ -16,7 +24,13 @@ class archer():
         self.attack = 14
         self.defence = 14
 
-class assassin():
+        return self.name
+        return str(self.health)
+        return str(self.mana)
+        return str(self.attack)
+        return str(self.defence)
+#Info for assassin class
+class Assassin():
     def __init__ (self):
         self.name = ("Assassin")
         self.health = 75
@@ -24,13 +38,25 @@ class assassin():
         self.attack = 15
         selt.defence = 7
 
-class warrior():
+        return self.name
+        return str(self.health)
+        return str(self.mana)
+        return str(self.attack)
+        return str(self.defence)
+#Info for warrior class
+class Warrior():
     def __init__ (self):
         self.name = ("Warrior")
         self.health = 175
         self.mana = 8
         self.attack = 175
         self.defence = 150
+
+        return self.name
+        return str(self.health)
+        return str(self.mana)
+        return str(self.attack)
+        return str(self.defence)
 
 boolean = True
 
