@@ -1,7 +1,7 @@
 #Importing the functions doc
 import TextBasedAdventureFunctions
 import classes
-
+import townsquare
 
 
 
@@ -59,7 +59,7 @@ print ("It is time for you to pick a class! Availible classes are mage, archer, 
 print ("You can pick a class by typing the name or you can type to inspect a class.")
 TextBasedAdventureFunctions.choose_class()
 
-
+townsquare.ragni_square()
 
 
 #Creating characters empty inventory

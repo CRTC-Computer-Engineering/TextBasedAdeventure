@@ -112,21 +112,25 @@ def choose_class():
             print ("You are now a Mage!")
             user_object = Mage()
             user_niche = ("mage")
+            blank_line(2)
             break
         elif niche == ("archer"):
             print ("You are now an Archer!")
             user_object = Archer()
             user_niche = ("archer")
+            blank_line(2)
             break
         elif niche == ("assassin"):
             print ("You are now an Assassin!")
             user_object = Assassin()
             user_niche = ("assassin")
+            blank_line(2)
             break
         elif niche == ("warrior"):
             print ("You are now a Warrior!")
             user_object = Warrior()
             user_niche = ("warrior")
+            blank_line(2)
             break
         elif niche == ("inspect"):
             look_at_class()
@@ -136,4 +140,7 @@ def print_stats():
     user_object.print_all_things()
 
 def current_map():
-    
+    print ("")
+
+def weapons_shop(city):
+    print ("Welcome to " + city)
