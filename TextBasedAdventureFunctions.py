@@ -1,3 +1,6 @@
+import AdventureMaps
+
+
 #Creating info for mage class
 user_niche = ()
 user_object = ()
@@ -38,7 +41,7 @@ class Assassin():
         self.health = 75
         self.mana = 15
         self.attack = 15
-        selt.defence = 7
+        self.defence = 7
     def print_all_things(self):
         print ("Class: " + str(self.name))
         print ("Health: " + str(self.health))
@@ -70,30 +73,34 @@ def blank_line(lines):
         print ("")
 
 
+
 #Used for inspecting classes inside of the class selection function
 def look_at_class():
-    inspect_class = input("What class would you like to inspect?")
-    while (True):
+    while True:
+        inspect_class = input("What class would you like to inspect?")
         if inspect_class == ("mage"):
             user_object = Mage()
             user_object.print_all_things()
-            yesno = input("Would you like to inspect another class?(y/n) ")
-            if yesno == ("y"):
-                continue
-            elif yesno == ("n"):
-                break
-            else:
-                print ("y and n are the only valid choices.")
+            print ("Type back to choose a class!")
         elif inspect_class == ("archer"):
             user_object = Archer()
             user_object.print_all_things()
-            yesno = input("Would you like to inspect another class?(y/n) ")
-            if yesno == ("y"):
-                continue
-            elif yesno == ("n"):
-                break
-            else:
-                print ("y and n are the only valid choices.")
+            print ("Type back to choose a class!")
+        elif inspect_class == ("assassin"):
+            user_object = Assassin()
+            user_object.print_all_things()
+            print ("Type back to choose a class!")
+        elif inspect_class == ("warrior"):
+            user_object = Warrior()
+            user_object.print_all_things()
+            print ("Type back to choose a class!")
+        elif inspect_class == ("back"):
+            break
+        else:
+            print ("That is not a valid option!")
+            continue
+
+
 
 #Used to choose a class at the beginning of the game
 def choose_class():
@@ -102,24 +109,31 @@ def choose_class():
     while True:
         niche = input("What class would you like? Or would you like to inspect a class?")
         if niche == ("mage"):
-            print ("You are now a mage!")
-            user_object = classes.Mage()
+            print ("You are now a Mage!")
+            user_object = Mage()
             user_niche = ("mage")
             break
         elif niche == ("archer"):
-            print ("You are now an archer!")
-
+            print ("You are now an Archer!")
+            user_object = Archer()
             user_niche = ("archer")
             break
         elif niche == ("assassin"):
-            print ("You are now an assassin!")
-
+            print ("You are now an Assassin!")
+            user_object = Assassin()
             user_niche = ("assassin")
             break
         elif niche == ("warrior"):
-            print ("You are now a warrior!")
-
+            print ("You are now a Warrior!")
+            user_object = Warrior()
             user_niche = ("warrior")
             break
         elif niche == ("inspect"):
             look_at_class()
+
+
+def print_stats():
+    user_object.print_all_things()
+
+def current_map():
+    
