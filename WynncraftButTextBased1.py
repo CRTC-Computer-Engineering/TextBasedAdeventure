@@ -1,10 +1,13 @@
 #Creating info for mage class
-user_class = ("Nothing")
+user_niche = ()
 class mage():
     def __init__ (self):
         self.name = ("Mage")
         self.health = 100
         self.mana = 20
+        self.attack = 10
+        self.defence = 10
+
 
 
 boolean = True
@@ -61,26 +64,27 @@ print ("It is time for you to pick a class! Availible classes are mage, archer, 
 print ("You can pick a class by typing the name or you can type to inspect a class.")
 niche = input("What class would you like? Or would you like to inspect a class?")
 def choose_class():
+    global user_niche
     while True:
         if niche == ("mage"):
             print ("You are now a mage!")
-            global user_class
-            user_class = ("mage")
+
+            user_niche = ("mage")
             break
         elif niche == ("archer"):
             print ("You are now an archer!")
-            global user_class
-            user_class = ("archer")
+
+            user_niche = ("archer")
             break
         elif niche == ("assassin"):
             print ("You are now an assassin!")
-            global user_class
-            user_class = ("assassin")
+
+            user_niche = ("assassin")
             break
         elif niche == ("warrior"):
             print ("You are now a warrior!")
-            global user_class
-            user_class = ("warrior")
+            
+            user_niche = ("warrior")
             break
         elif niche == ("inspect"):
             inspect_class = input("What class would you like to inspect?")
@@ -92,4 +96,4 @@ inventory = []
 choose_class()
 
 print ("Test")
-print (user_class)
+print (user_niche)
