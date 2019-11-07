@@ -1,3 +1,9 @@
+#Importing the functions doc
+import TextBasedAdventureFunctions
+
+
+
+
 #Creating info for mage class
 user_niche = ()
 user_object = ()
@@ -105,9 +111,7 @@ while(boolean):
     boolean = False
 #Basic character creation lines
 #The fav_color command will probably play a role in monster stuff
-def blank_line(lines):
-    for i in range(lines):
-        print ("")
+
 name = input("Hello adventurer! What is your name? ")
 player_quest = input("What is your quest? ")
 fav_color = input("And what is your favorite color? ")
