@@ -17,11 +17,51 @@ Tattered_Leather_Helm = {
     "lore" : """Just a funny looking hat."""
 }
 
+#Tattered Leather Shoes
+Tattered_Leather_Shoes = {
+    "type" : "Footgear"
+    "defence" : 1
+    "lore" : """Stolen from your local Mando."""
+}
 
-    def __init__ (self):
-        self.item1 = ("10G - Tattered Leather Chestplate")
-        self.item2 = ("2G  - Tattered Leather Helm")
-        self.item3 = ("3G  - Tattered Leather Shoes")
-        self.item4 = ("6G  - Tattered Leather Pants")
-        self.item5 = ("8G  - Cracked Barrel Top")
-    def print_all_armor_ragni(self):
+#Tattered Leather Pants
+Tattered_Leather_Pants = {
+    "type" : "leggings"
+    "defence" : 3
+    "lore" : """Just an apron"""
+}
+
+#Cracked Barrel Top
+Cracked_Barrel_Top = {
+    "type" : "shield"
+    "defence" : 5
+    "lore" : """World's finest! Straight from Nemract Harbor!"""
+}
+
+#Spikey Stick
+Spiky_Stick = {
+    "type" : "spear"
+    "attack" : 3
+    "lore" : """Ever seen a spiky stick?"""
+}
+
+#Sparkly Stick
+Sparkly_Stick = {
+    "type" : "wand"
+    "attack" : 3
+    "lore" : """Found at your local craft store"""
+}
+
+#Sharp Spoon
+Sharp_Spoon = {
+    "type" : "dagger"
+    "attack" : 3
+    "lore" : """For a spoon, it's surprisingly sharp!"""
+}
+
+#Bendy stick
+Bendy_Stick = {
+    "type" : "bow"
+    "attacke" = 3
+    "lore" : """Beeeeeennnnnndddddyyyyyyy"""
+}

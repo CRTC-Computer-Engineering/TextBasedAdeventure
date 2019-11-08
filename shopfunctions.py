@@ -87,7 +87,7 @@ def armor_shop(city):
                 armor_shop(city)
             elif input_ragni_weapon_shop == 3:
                 townsquare.ragni_square()
-                
+
     elif city == ("Detlas"):
         print ("Detlas armor shop doesn't exist yet")
 
@@ -131,10 +131,10 @@ def weapon_shop(city):
                 store.print_all_weapons_ragni()
                 purchase = int(input("Which item catches your eye? "))
                 if purchase == 1:
-                    if balance >= 10:
-                        balance = balance - 10
+                    if balance >= 15:
+                        balance = balance - 15
                         TextBasedAdventureFunctions.blank_line(1)
-                        print ("You bought the Tattered Leather Chestplate!")
+                        print ("You bought the Spiky Stick!")
                         TextBasedAdventureFunctions.blank_line(1)
                         armor_shop(city)
                     else:
@@ -143,9 +143,10 @@ def weapon_shop(city):
                         TextBasedAdventureFunctions.blank_line(1)
                         armor_shop(city)
                 elif purchase == 2:
-                    if balance >= 2:
+                    if balance >= 15:
+                        balance = balance - 15
                         TextBasedAdventureFunctions.blank_line(1)
-                        print ("You bought the Tattered Leather Helm!")
+                        print ("You bought the Sparkly Stick!")
                         TextBasedAdventureFunctions.blank_line(1)
                         armor_shop(city)
                     else:
@@ -154,9 +155,10 @@ def weapon_shop(city):
                         TextBasedAdventureFunctions.blank_line(1)
                         continue
                 elif purchase == 3:
-                    if balance >= 3:
+                    if balance >= 15:
+                        balance = balance - 15
                         TextBasedAdventureFunctions.blank_line(1)
-                        print ("You bought the Tattered Leather Shoes!")
+                        print ("You bought the Sharp Spoon!")
                         TextBasedAdventureFunctions.blank_line(1)
                         armor_shop(city)
                     else:
@@ -165,9 +167,10 @@ def weapon_shop(city):
                         TextBasedAdventureFunctions.blank_line(1)
                         armor_shop(city)
                 elif purchase == 4:
-                    if balance >= 6:
+                    if balance >= 15:
+                        balance = balance - 15
                         TextBasedAdventureFunctions.blank_line(1)
-                        print ("You bought the Tattered Leather Pants!")
+                        print ("You bought the Bendy Stick!")
                         TextBasedAdventureFunctions.blank_line(1)
                         armor_shop(city)
                     else:
@@ -176,17 +179,6 @@ def weapon_shop(city):
                         TextBasedAdventureFunctions.blank_line(1)
                         armor_shop(city)
                 elif purchase == 5:
-                    if balance >= 8:
-                        TextBasedAdventureFunctions.blank_line(1)
-                        print ("You bought the Cracked Barrel Top!")
-                        TextBasedAdventureFunctions.blank_line(1)
-                        armor_shop(city)
-                    else:
-                        TextBasedAdventureFunctions.blank_line(1)
-                        print ("You cannot afford this item!")
-                        TextBasedAdventureFunctions.blank_line(1)
-                        armor_shop(city)
-                elif purchase == 6:
                     armor_shop(city)
 
             elif input_ragni_weapon_shop == 2:

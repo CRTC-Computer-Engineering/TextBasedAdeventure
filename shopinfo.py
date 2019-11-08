@@ -15,3 +15,19 @@ class ragni_armor_shop():
         print ("5. " + str(self.item5))
         print ("6. Back")
         print ("---------------------------------------------")
+
+
+class ragni_weapon_shop():
+    def __init__ (self):
+        self.item1 = ("15G - Spiky Stick")
+        self.item2 = ("15G - Sparkly Stick")
+        self.item3 = ("15G - Sharp Spoon")
+        self.item4 = ("15G - Bendy Stick")
+    def print_all_weapons_ragni(self):
+        print ("---------------------------------------------")
+        print ("1. " + str(self.item1))
+        print ("2. " + str(self.item2))
+        print ("3. " + str(self.item3))
+        print ("4. " + str(self.item4))
+        print ("6. Back")
+        print ("---------------------------------------------")
