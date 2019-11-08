@@ -23,7 +23,17 @@ Here's a list of where you can go in Ragni:
     elif place == 2:
         shopfunctions.armor_shop(city)
     elif place == 3:
-        print ("")
+        print ("Money is no")
+    elif place == 4:
+        print ("Sorry No Pot")
+    elif place == 5:
+        print ("Questn't")
+    elif place == 6:
+        print ("""Okay its Childish Gamino homegirl drop it like the NASDAQ
+Move white girls like there's coke up my ass crack
+Move black girls trust me fuck it ill do either
+I love pussy i love bitches dude i should running Peeta""")
+
 
 def detlas_square():
     print ("")
@@ -34,7 +44,7 @@ def almuj_square():
 def nemract_square():
     print ("")
 
-def nessak_square():
+def nesaak_square():
     print ("")
 
 def troms_square():

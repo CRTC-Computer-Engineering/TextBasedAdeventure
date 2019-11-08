@@ -89,5 +89,23 @@ def armor_shop(city):
                 armor_shop(city)
             elif input_ragni_armor_shop == 3:
                 townsquare.ragni_square()
-    else:
-        print ("")
+        elif city == ("Detlas"):
+            print ("Detlas armor shop doesn't exist yet")
+
+        elif city == ("Almuj"):
+            print ("Almuj armor shop doesn't exist yet")
+
+        elif city == ("Nemract"):
+            print ("Nemract armor shop doesn't exist yet")
+
+        elif city == ("Nesaak"):
+            print ("Nesaak armor shop doesn't exist yet")
+
+        elif city == ("Troms"):
+            print ("Troms armor shop doesn't exist yet")
+
+        elif city == ("Rymek"):
+            print ("Rymek armor shop doesn't exist yet")
+
+        else:
+            print ("Something went very wrong. Darn.")
