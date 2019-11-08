@@ -87,6 +87,7 @@ def armor_shop(city):
                 armor_shop(city)
             elif input_ragni_weapon_shop == 3:
                 townsquare.ragni_square()
+                
     elif city == ("Detlas"):
         print ("Detlas armor shop doesn't exist yet")
 
