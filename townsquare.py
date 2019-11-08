@@ -1,6 +1,6 @@
 #This file is the structure of the town square
-
 import TextBasedAdventureFunctions
+import shopfunctions
 
 def ragni_square():
     city = ("Ragni")
@@ -19,10 +19,11 @@ Here's a list of where you can go in Ragni:
 
     place = int(input("Where would you like to go in Ragni? "))
     if place == 1:
-        TextBasedAdventureFunctions.weapons_shop(city)
+        shopfunctions.weapons_shop(city)
     elif place == 2:
+        shopfunctions.armor_shop(city)
+    elif place == 3:
         print ("")
-
 
 def detlas_square():
     print ("")

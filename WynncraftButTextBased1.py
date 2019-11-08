@@ -2,7 +2,7 @@
 import TextBasedAdventureFunctions
 import classes
 import townsquare
-
+import shopfunctions
 
 
 
