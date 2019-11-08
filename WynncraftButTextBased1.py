@@ -53,13 +53,20 @@ name = input("Hello adventurer! What is your name? ")
 player_quest = input("What is your quest? ")
 fav_color = input("And what is your favorite color? ")
 TextBasedAdventureFunctions.blank_line(3)
-print ("Welcome to Wynncraft " + name + "! The text based adventure game!")
+print ("Welcome to Wynncraft " + name)
 #Picking a class time baby. Calling class niche because class is already a python command.
-print ("It is time for you to pick a class! Availible classes are mage, archer, assassin, and warrior.")
-print ("You can pick a class by typing the name or you can type to inspect a class.")
-TextBasedAdventureFunctions.choose_class()
+print ("It is time for you to pick a class!")
 
-townsquare.ragni_square()
+TextBasedAdventureFunctions.choose_class()
+TextBasedAdventureFunctions.blank_line(5)
+print ("""Now that you've picked your class, we'll take you to Ragni.
+Go to the quest board and talk to the king once you get there. He'll
+help you get started on your adventure.""")
+TextBasedAdventureFunctions.blank_line(1)
+ready = input("Press ENTER when ready.")
+if ready == (""):
+    townsquare.ragni_square()
+
 
 
 #Creating characters empty inventory

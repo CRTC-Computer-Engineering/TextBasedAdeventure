@@ -95,25 +95,37 @@ def blank_line(lines):
 #Used for inspecting classes inside of the class selection function
 def look_at_class():
     while True:
-        inspect_class = input("What class would you like to inspect?")
-        if inspect_class == ("mage"):
+        print ("""---------------------------------------------
+1. Mage
+2. Archer
+3. Assassin
+4. Warrior
+5. Back
+---------------------------------------------""")
+        blank_line(3)
+        inspect_class = int(input("What class would you like to inspect?"))
+        if inspect_class == 1:
             user_object = Mage()
             user_object.print_all_things()
-            print ("Type back to choose a class!")
-        elif inspect_class == ("archer"):
+            print ("Press 5 to go back.")
+            blank_line(2)
+        elif inspect_class == 2:
             user_object = Archer()
             user_object.print_all_things()
-            print ("Type back to choose a class!")
-        elif inspect_class == ("assassin"):
+            print ("Press 5 to go back.")
+            blank_line(2)
+        elif inspect_class == 3:
             user_object = Assassin()
             user_object.print_all_things()
-            print ("Type back to choose a class!")
-        elif inspect_class == ("warrior"):
+            print ("Press 5 to go back.")
+            blank_line(2)
+        elif inspect_class == 4:
             user_object = Warrior()
             user_object.print_all_things()
-            print ("Type back to choose a class!")
-        elif inspect_class == ("back"):
-            break
+            print ("Press 5 to go back.")
+            blank_line(2)
+        elif inspect_class == 5:
+            choose_class()
         else:
             print ("That is not a valid option!")
             continue
@@ -122,36 +134,44 @@ def look_at_class():
 
 #Used to choose a class at the beginning of the game
 def choose_class():
-    global user_niche
-    global user_object
     while True:
-        niche = input("What class would you like? Or would you like to inspect a class?")
-        if niche == ("mage"):
+        print ("""---------------------------------------------
+1. Mage
+2. Archer
+3. Assassin
+4. Warrior
+---------------------------------------------""")
+        global user_niche
+        global user_object
+        
+        niche = input("What class would you like?")
+        if niche == ("1"):
             print ("You are now a Mage!")
             user_object = Mage()
             user_niche = ("mage")
             blank_line(2)
             break
-        elif niche == ("archer"):
+        elif niche == ("2"):
             print ("You are now an Archer!")
             user_object = Archer()
             user_niche = ("archer")
             blank_line(2)
             break
-        elif niche == ("assassin"):
+        elif niche == ("3"):
             print ("You are now an Assassin!")
             user_object = Assassin()
             user_niche = ("assassin")
             blank_line(2)
             break
-        elif niche == ("warrior"):
+        elif niche == ("4"):
             print ("You are now a Warrior!")
             user_object = Warrior()
             user_niche = ("warrior")
             blank_line(2)
             break
-        elif niche == ("inspect"):
-            look_at_class()
+        else:
+            print ("That is not a valid input.")
+            continue
 
 
 def print_stats():
