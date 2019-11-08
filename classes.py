@@ -53,8 +53,8 @@ class Warrior():
         self.name = ("Warrior")
         self.health = 175
         self.mana = 8
-        self.attack = 175
-        self.defence = 150
+        self.attack = 17
+        self.defence = 15
     def print_all_things(self):
         print ("Class: " + str(self.name))
         print ("Health: " + str(self.health))

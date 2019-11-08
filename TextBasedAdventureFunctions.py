@@ -5,6 +5,7 @@ import classes
 user_niche = ()
 user_object = ()
 store = ()
+balance = 10
 class Mage():
     def __init__ (self):
         self.name = ("Mage")
@@ -169,16 +170,70 @@ def weapons_shop(city):
 3. Back
 ---------------------------------------------""")
     blank_line(1)
-    input_ragni_armor_shop = int(input("Pick and action: "))
+    input_ragni_armor_shop = int(input("Pick an action: "))
     while True:
+        global balance
         if input_ragni_armor_shop == 1:
             store = ragni_armor_shop()
             store.print_all_armor_ragni()
             purchase = int(input("Which item catches your eye? "))
             if purchase == 1:
-                    ("ok")
+                if balance >= 10:
+                    balance = balance - 10
+                    blank_line(1)
+                    print ("You bought the Tattered Leather Chestplate!")
+                    blank_line(1)
+                else:
+                    blank_line(1)
+                    print ("You cannot afford this item!")
+                    blank_line(1)
+                    continue
+            elif purchase == 2:
+                if balance >= 2:
+                    blank_line(1)
+                    print ("You bought the Tattered Leather Helm!")
+                    blank_line(1)
+                    continue
+                else:
+                    blank_line(1)
+                    print ("You cannot afford this item!")
+                    blank_line(1)
+                    continue
+            elif purchase == 3:
+                if balance >= 3:
+                    blank_line(1)
+                    print ("You bought the Tattered Leather Shoes!")
+                    blank_line(1)
+                else:
+                    blank_line(1)
+                    print ("You cannot afford this item!")
+                    blank_line(1)
+                    continue
+            elif purchase == 4:
+                if balance >= 6:
+                    blank_line(1)
+                    print ("You bought the Tattered Leather Pants!")
+                    blank_line(1)
+                else:
+                    blank_line(1)
+                    print ("You cannot afford this item!")
+                    blank_line(1)
+                    continue
+            elif purchase == 5:
+                if balance >= 8:
+                    blank_line(1)
+                    print ("You bought the Cracked Barrel Top!")
+                    blank_line(1)
+                else:
+                    blank_line(1)
+                    print ("You cannot afford this item!")
+                    blank_line(1)
+                    continue
+            elif purchase == 6:
+                weapons_shop(city)
+
         elif input_ragni_armor_shop == 2:
             print ("Do you think I'm made of money?! Get lost!")
-            continue
+            weapons_shop(city)
         elif input_ragni_armor_shop == 3:
             continue
