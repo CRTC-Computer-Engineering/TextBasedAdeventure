@@ -6,20 +6,22 @@ def ragni_square():
     city = ("Ragni")
     print ("Welcome to Ragni!")
     TextBasedAdventureFunctions.blank_line(2)
-    print ("----------------------------------------------")
-    print ("Here's a list of where you can go in Ragni:")
-    print ("1. Weapons Shop")
-    print ("2. Armor Shop")
-    print ("3. Bank")
-    print ("4. Potion Merchanct")
-    print ("5. Quest Board")
-    print ("6. The Map")
-    print ("----------------------------------------------")
+    print ("""---------------------------------------------
+Here's a list of where you can go in Ragni:
+1. Weapons Shop
+2. Armor Shop
+3. Bank
+4. Potion Merchant
+5. Quest Board
+6. The Map
+---------------------------------------------""")
     TextBasedAdventureFunctions.blank_line(2)
 
     place = int(input("Where would you like to go in Ragni? "))
     if place == 1:
         TextBasedAdventureFunctions.weapons_shop(city)
+    elif place == 2:
+        print ("")
 
 
 def detlas_square():
