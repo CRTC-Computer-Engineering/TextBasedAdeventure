@@ -36,7 +36,39 @@ I love pussy i love bitches dude i should running Peeta""")
 
 
 def detlas_square():
-    print ("")
+    city = ("Detlas")
+    print ("Welcome to Detlas!")
+    TextBasedAdventureFunctions.blank_line(2)
+    print ("""---------------------------------------------
+Here's a list of where you can go in Detlas:
+1. Weapons Shop
+2. Armor Shop
+3. Bank
+4. Potion Merchant
+5. Enchanter
+6. Quest Board
+7. The Map
+---------------------------------------------""")
+    TextBasedAdventureFunctions.blank_line(2)
+
+    place = int(input("Where would you like to go in Detlas? "))
+    if place == 1:
+        shopfunctions.weapons_shop(city)
+    elif place == 2:
+        shopfunctions.armor_shop(city)
+    elif place == 3:
+        print ("Money is no")
+    elif place == 4:
+        print ("Sorry No Pot")
+    elif place == 5:
+        print ("Enchanter is out to lunch")
+    elif place == 6:
+        print ("Questn't")
+    elif place == 7:
+        print ("""Okay its Childish Gamino homegirl drop it like the NASDAQ
+Move white girls like there's coke up my ass crack
+Move black girls trust me fuck it ill do either
+I love pussy i love bitches dude i should running Peeta""")
 
 def almuj_square():
     print ("")

@@ -3,14 +3,17 @@ import townsquare
 import shopinfo
 import os
 import items
+import bank
+import character_info
 
-#Creating characters empty inventory
-inventory = []
-
+#Calling inventory from character_info
+inventory = character_info.inventory
+#Calling balance from character_info
+balance = character_info.balance
 
 
 store = ()
-balance = 10
+
 
 def armor_shop(city):
     TextBasedAdventureFunctions.blank_line(1)
