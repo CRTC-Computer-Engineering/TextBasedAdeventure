@@ -66,8 +66,3 @@ TextBasedAdventureFunctions.blank_line(1)
 ready = input("Press ENTER when ready.")
 if ready == (""):
     townsquare.ragni_square()
-
-
-
-#Creating characters empty inventory
-inventory = []

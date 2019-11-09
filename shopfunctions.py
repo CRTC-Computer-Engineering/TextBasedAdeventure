@@ -2,6 +2,12 @@ import TextBasedAdventureFunctions
 import townsquare
 import shopinfo
 import os
+import items
+
+#Creating characters empty inventory
+inventory = []
+
+
 
 store = ()
 balance = 10
@@ -29,6 +35,9 @@ def armor_shop(city):
                     TextBasedAdventureFunctions.blank_line(1)
                     print ("You bought the Tattered Leather Chestplate!")
                     TextBasedAdventureFunctions.blank_line(1)
+                    inventory.append(items.Tattered_Leather_Chestplate)
+                    itemname = inventory.Tattered_Leather_Chestplate.get("name")
+                    print (itemname)
                     armor_shop(city)
                 else:
                     TextBasedAdventureFunctions.blank_line(1)
@@ -136,19 +145,19 @@ def weapon_shop(city):
                         TextBasedAdventureFunctions.blank_line(1)
                         print ("You bought the Spiky Stick!")
                         TextBasedAdventureFunctions.blank_line(1)
-                        armor_shop(city)
+                        weapons_shop(city)
                     else:
                         TextBasedAdventureFunctions.blank_line(1)
                         print ("You cannot afford this item!")
                         TextBasedAdventureFunctions.blank_line(1)
-                        armor_shop(city)
+                        weapons_shop(city)
                 elif purchase == 2:
                     if balance >= 15:
                         balance = balance - 15
                         TextBasedAdventureFunctions.blank_line(1)
                         print ("You bought the Sparkly Stick!")
                         TextBasedAdventureFunctions.blank_line(1)
-                        armor_shop(city)
+                        weapons_shop(city)
                     else:
                         TextBasedAdventureFunctions.blank_line(1)
                         print ("You cannot afford this item!")
@@ -160,19 +169,19 @@ def weapon_shop(city):
                         TextBasedAdventureFunctions.blank_line(1)
                         print ("You bought the Sharp Spoon!")
                         TextBasedAdventureFunctions.blank_line(1)
-                        armor_shop(city)
+                        weapons_shop(city)
                     else:
                         TextBasedAdventureFunctions.blank_line(1)
                         print ("You cannot afford this item!")
                         TextBasedAdventureFunctions.blank_line(1)
-                        armor_shop(city)
+                        weapons_shop(city)
                 elif purchase == 4:
                     if balance >= 15:
                         balance = balance - 15
                         TextBasedAdventureFunctions.blank_line(1)
                         print ("You bought the Bendy Stick!")
                         TextBasedAdventureFunctions.blank_line(1)
-                        armor_shop(city)
+                        weapons_shop(city)
                     else:
                         TextBasedAdventureFunctions.blank_line(1)
                         print ("You cannot afford this item!")
