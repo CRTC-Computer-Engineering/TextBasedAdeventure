@@ -29,7 +29,7 @@ class ragni_weapon_shop():
         print ("2. " + str(self.item2))
         print ("3. " + str(self.item3))
         print ("4. " + str(self.item4))
-        print ("6. Back")
+        print ("5. Back")
         print ("---------------------------------------------")
 
 #Info for delas armor shop

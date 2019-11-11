@@ -94,11 +94,11 @@ def armor_shop(city):
             elif purchase == 6:
                 armor_shop(city)
 
-            elif input_ragni_weapon_shop == 2:
-                print ("Do you think I'm made of money?! Get lost!")
-                armor_shop(city)
-            elif input_ragni_weapon_shop == 3:
-                townsquare.ragni_square()
+        elif input_ragni_weapon_shop == 2:
+            print ("Do you think I'm made of money?! Get lost!")
+            armor_shop(city)
+        elif input_ragni_weapon_shop == 3:
+            townsquare.ragni_square()
 
     elif city == ("Detlas"):
         print ("Detlas armor shop doesn't exist yet")
@@ -124,7 +124,7 @@ def armor_shop(city):
 
 
 
-def weapon_shop(city):
+def weapons_shop(city):
     TextBasedAdventureFunctions.blank_line(1)
     print ("Welcome to the " + city + " Weapon shop!")
     print ("How can we help you today?")
@@ -189,9 +189,9 @@ def weapon_shop(city):
                         TextBasedAdventureFunctions.blank_line(1)
                         print ("You cannot afford this item!")
                         TextBasedAdventureFunctions.blank_line(1)
-                        armor_shop(city)
+                        weapons_shop(city)
                 elif purchase == 5:
-                    armor_shop(city)
+                    weapons_shop(city)
 
             elif input_ragni_weapon_shop == 2:
                 print ("Do you think I'm made of money?! Get lost!")
@@ -215,6 +215,105 @@ def weapon_shop(city):
 
         elif city == ("Rymek"):
             print ("Rymek armor shop doesn't exist yet")
+
+        else:
+            print ("Something went very wrong. Darn.")
+
+
+
+
+
+def potion_shop(city):
+    TextBasedAdventureFunctions.blank_line(1)
+    print ("Welcome to the " + city + " Potion shop!")
+    print ("How can we help you today?")
+    print ("""---------------------------------------------
+1. Buy
+2. Sell
+3. Back
+---------------------------------------------""")
+    TextBasedAdventureFunctions.blank_line(1)
+    while True:
+        if city == ("Ragni"):
+            input_ragni_potion_shop = int(input("Pick an action: "))
+            global balance
+            if input_ragni_potion_shop == 1:
+                store = shopinfo.ragni_potion_shop()
+                store.print_all_potions_ragni()
+                purchase = int(input("Which item catches your eye? "))
+                if purchase == 1:
+                    if balance >= 15:
+                        balance = balance - 15
+                        TextBasedAdventureFunctions.blank_line(1)
+                        print ("You bought the Healing Potion I!")
+                        TextBasedAdventureFunctions.blank_line(1)
+                        potion_shop(city)
+                    else:
+                        TextBasedAdventureFunctions.blank_line(1)
+                        print ("You cannot afford this item!")
+                        TextBasedAdventureFunctions.blank_line(1)
+                        potion_shop(city)
+                elif purchase == 2:
+                    if balance >= 15:
+                        balance = balance - 15
+                        TextBasedAdventureFunctions.blank_line(1)
+                        print ("You bought the Mana Potion I!")
+                        TextBasedAdventureFunctions.blank_line(1)
+                        potion_shop(city)
+                    else:
+                        TextBasedAdventureFunctions.blank_line(1)
+                        print ("You cannot afford this item!")
+                        TextBasedAdventureFunctions.blank_line(1)
+                        continue
+                elif purchase == 3:
+                    if balance >= 15:
+                        balance = balance - 15
+                        TextBasedAdventureFunctions.blank_line(1)
+                        print ("You bought the Healing Potion II!")
+                        TextBasedAdventureFunctions.blank_line(1)
+                        potion_shop(city)
+                    else:
+                        TextBasedAdventureFunctions.blank_line(1)
+                        print ("You cannot afford this item!")
+                        TextBasedAdventureFunctions.blank_line(1)
+                        potion_shop(city)
+                elif purchase == 4:
+                    if balance >= 15:
+                        balance = balance - 15
+                        TextBasedAdventureFunctions.blank_line(1)
+                        print ("You bought the Mana Potion II!")
+                        TextBasedAdventureFunctions.blank_line(1)
+                        potion_shop(city)
+                    else:
+                        TextBasedAdventureFunctions.blank_line(1)
+                        print ("You cannot afford this item!")
+                        TextBasedAdventureFunctions.blank_line(1)
+                        potion_shop(city)
+                elif purchase == 5:
+                    potion_shop(city)
+
+            elif input_ragni_potion_shop == 2:
+                print ("Do you think I'm made of money?! Get lost!")
+                potion_shop(city)
+            elif input_ragni_potion_shop == 3:
+                townsquare.ragni_square()
+        elif city == ("Detlas"):
+            print ("Detlas potion shop doesn't exist yet")
+
+        elif city == ("Almuj"):
+            print ("Almuj potion shop doesn't exist yet")
+
+        elif city == ("Nemract"):
+            print ("Nemract potion shop doesn't exist yet")
+
+        elif city == ("Nesaak"):
+            print ("Nesaak potion shop doesn't exist yet")
+
+        elif city == ("Troms"):
+            print ("Troms potion shop doesn't exist yet")
+
+        elif city == ("Rymek"):
+            print ("Rymek potion shop doesn't exist yet")
 
         else:
             print ("Something went very wrong. Darn.")

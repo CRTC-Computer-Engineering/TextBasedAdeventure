@@ -24,16 +24,18 @@ Here's a list of where you can go in Ragni:
         shopfunctions.armor_shop(city)
     elif place == 3:
         print ("Money is no")
+        ragni_square()
     elif place == 4:
         print ("Sorry No Pot")
+        ragni_square()
     elif place == 5:
         print ("Questn't")
+        ragni_square()
     elif place == 6:
-        print ("""Okay its Childish Gamino homegirl drop it like the NASDAQ
-Move white girls like there's coke up my ass crack
-Move black girls trust me fuck it ill do either
-I love pussy i love bitches dude i should running Peeta""")
-
+        print ("""Okay its Childish Gamino homegirl drop it like the NASDAQ""")
+        ragni_square()
+    else:
+        print int("That is not a valid option.")
 
 def detlas_square():
     city = ("Detlas")
@@ -58,18 +60,19 @@ Here's a list of where you can go in Detlas:
         shopfunctions.armor_shop(city)
     elif place == 3:
         print ("Money is no")
+        detlas_square()
     elif place == 4:
         print ("Sorry No Pot")
+        detlas_square()
     elif place == 5:
         print ("Enchanter is out to lunch")
+        detlas_square()
     elif place == 6:
         print ("Questn't")
+        detlas_square()
     elif place == 7:
-        print ("""Okay its Childish Gamino homegirl drop it like the NASDAQ
-Move white girls like there's coke up my ass crack
-Move black girls trust me fuck it ill do either
-I love pussy i love bitches dude i should running Peeta""")
-
+        print ("""Okay its Childish Gamino homegirl drop it like the NASDAQ""")
+        detlas_square()
 def almuj_square():
     print ("")
 
