@@ -35,7 +35,7 @@ Here's a list of where you can go in Ragni:
         print ("""Okay its Childish Gamino homegirl drop it like the NASDAQ""")
         ragni_square()
     else:
-        print int("That is not a valid option.")
+        print ("That is not a valid option.")
 
 def detlas_square():
     city = ("Detlas")

@@ -5,6 +5,10 @@ import os
 import items
 import bank
 import character_info
+import yaml
+with open(r'D:\GitHubDesktop\TextBasedAdventure\ragniarmorshop.yaml') as file:
+    ragni_armor_shop = yaml.load(file, Loader=yaml.FullLoader)
+    
 
 #Calling inventory from character_info
 inventory = character_info.inventory

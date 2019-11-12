@@ -1,4 +1,5 @@
 #Importing the functions doc
+import pyyaml
 import TextBasedAdventureFunctions
 import classes
 import townsquare

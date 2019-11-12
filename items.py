@@ -3,40 +3,6 @@
 #now defence = 5
 
 #Tattered Leather Chestplate
-Tattered_Leather_Chestplate = {
-    "type" : "Chestplate",
-    "defence" : 5,
-    "lore" : """The chestplate of a man
-    who was wrecked by a Joe Mamma joke."""
-}
-
-#Tattered Leather Helm
-Tattered_Leather_Helm = {
-    "type" : "Helmet",
-    "defence" : 2,
-    "lore" : """Just a funny looking hat."""
-}
-
-#Tattered Leather Shoes
-Tattered_Leather_Shoes = {
-    "type" : "Footgear",
-    "defence" : 1,
-    "lore" : """Stolen from your local Mando."""
-}
-
-#Tattered Leather Pants
-Tattered_Leather_Pants = {
-    "type" : "leggings",
-    "defence" : 3,
-    "lore" : """Just an apron"""
-}
-
-#Cracked Barrel Top
-Cracked_Barrel_Top = {
-    "type" : "shield",
-    "defence" : 5,
-    "lore" : """World's finest! Straight from Nemract Harbor!"""
-}
 
 #Spikey Stick
 Spiky_Stick = {
