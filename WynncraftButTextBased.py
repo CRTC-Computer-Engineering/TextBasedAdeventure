@@ -1,5 +1,14 @@
+import os
+
+cwd = os.getcwd()  # Get the current working directory (cwd)
+files = os.listdir(cwd)  # Get all the files in that directory
+print("Files in %r: %s" % (cwd, files))
+
+
 #Importing the functions doc
-import pyyaml
+import yaml
+with open('D:/GitHubDekstop/TextBasedAdventure/shopinfos/ragniarmorshop.yaml', 'r') as file:
+    ragni_armor_shop = yaml.load(file, Loader=yaml.FullLoader)
 import TextBasedAdventureFunctions
 import classes
 import townsquare

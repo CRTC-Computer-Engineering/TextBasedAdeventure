@@ -1,0 +1,33 @@
+ragniweaponshop:
+  items:
+    spiky_stick:
+      name: "Spiky Stick"
+      price: 15
+      type: "Spear"
+      attack: 3
+      lore: """Ever seen a spiky stick?"""
+
+    sparkly_stick:
+      name: "Sparkly Stick"
+      price: 15
+      type: "Wand"
+      attack: 3
+      lore: """Found at your local craft store"""
+
+    sharp_spoon:
+      name: "Sharp Spoon"
+      price: 15
+      type: "Dagger"
+      attack: 3
+      lore: """For a spoon, it's surprisingly sharp!"""
+
+    bendy_stick:
+      name: "Bendy Stick"
+      price: 15
+      type: "Bow"
+      attack: 3
+      lore: """Beeeeeennnnnndddddyyyyyyy"""
+
+
+
+  

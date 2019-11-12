@@ -6,9 +6,9 @@ import items
 import bank
 import character_info
 import yaml
-with open(r'D:\GitHubDesktop\TextBasedAdventure\ragniarmorshop.yaml') as file:
+with open('ragniarmorshop.yaml', 'r') as file:
     ragni_armor_shop = yaml.load(file, Loader=yaml.FullLoader)
-    
+
 
 #Calling inventory from character_info
 inventory = character_info.inventory
@@ -42,8 +42,10 @@ def armor_shop(city):
                     TextBasedAdventureFunctions.blank_line(1)
                     print ("You bought the Tattered Leather Chestplate!")
                     TextBasedAdventureFunctions.blank_line(1)
-                    inventory.append(items.Tattered_Leather_Chestplate)
-                    itemname = inventory.Tattered_Leather_Chestplate.get("name")
+                    #tatteredleatherchestplate = ragni_armor_shop.get(items)
+                    #Not sure how to call a list from a list
+                    inventory.append(ragniarmorshop.items)
+                    itemname = inventory.tattered_leather_chestplate.get["name"]
                     print (itemname)
                     armor_shop(city)
                 else:
