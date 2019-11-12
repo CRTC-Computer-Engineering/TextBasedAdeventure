@@ -1,7 +1,7 @@
 ragniarmorshop:
   items:
         tattered_leather_chestplate:
-          name: "Tattered Leather Chestplate"
+          name:  Tattered Leather Chestplate"
           price: 10
           type: "Chestplate"
           defence: 5
@@ -28,7 +28,7 @@ ragniarmorshop:
           type: "Leggings"
           defence: 3
           lore: """Just an apron."""
-          
+
         cracked_barrel_top:
           name: "Cracked Barrel Top"
           price: 8
