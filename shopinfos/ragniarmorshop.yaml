@@ -1,37 +1,42 @@
 ragniarmorshop:
-  items:
+    items:
         tattered_leather_chestplate:
-          name: "Tattered Leather Chestplate"
-          price: 10
-          type: "Chestplate"
-          defence: 5
-          lore: """The chestplate of a man
-          who was wrecked by a Joe Mamma joke."""
+            name: "Tattered Leather Chestplate"
+            price: 10
+            type: "Chestplate"
+            defence: 5
+            lore: >
+                The chestplate of a man
+                who was wrecked by a Joe Mamma joke.
 
         tattered_leather_helm:
-          name: "Tattered Leather Helm"
-          price: 2
-          type: "Helmet"
-          defence: 2
-          lore: """Just a funny looking hat."""
+            name: "Tattered Leather Helm"
+            price: 2
+            type: "Helmet"
+            defence: 2
+            lore: >
+                Just a funny looking hat.
 
         tattered_leather_shoes:
-          name: "Tattered Leather Shoes"
-          price: 3
-          type: "Footgear"
-          defence: 1
-          lore: """Stolen from your local Mando."""
+            name: "Tattered Leather Shoes"
+            price: 3
+            type: "Footgear"
+            defence: 1
+            lore: >
+                Stolen from your local Mando.
 
         tattered_leather_pants:
-          name: "Tattered Leather Pants"
-          price: 6
-          type: "Leggings"
-          defence: 3
-          lore: """Just an apron."""
+            name: "Tattered Leather Pants"
+            price: 6
+            type: "Leggings"
+            defence: 3
+            lore: >
+                Just an apron.
           
         cracked_barrel_top:
-          name: "Cracked Barrel Top"
-          price: 8
-          type: "Shield"
-          defence: 5
-          lore: """World's finest! Straight from Nemract Harbor!"""
+            name: "Cracked Barrel Top"
+            price: 8
+            type: "Shield"
+            defence: 5
+            lore: >
+                World's finest! Straight from Nemract Harbor!

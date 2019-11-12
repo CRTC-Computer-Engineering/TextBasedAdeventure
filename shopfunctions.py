@@ -6,7 +6,7 @@ import items
 import bank
 import character_info
 import yaml
-with open('ragniarmorshop.yaml', 'r') as file:
+with open('shopinfos/ragniarmorshop.yaml', 'r') as file:
     ragni_armor_shop = yaml.load(file, Loader=yaml.FullLoader)
 
 

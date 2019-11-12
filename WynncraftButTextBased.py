@@ -7,7 +7,7 @@ print("Files in %r: %s" % (cwd, files))
 
 #Importing the functions doc
 import yaml
-with open('D:/GitHubDekstop/TextBasedAdventure/shopinfos/ragniarmorshop.yaml', 'r') as file:
+with open('shopinfos/ragniarmorshop.yaml', 'r') as file:
     ragni_armor_shop = yaml.load(file, Loader=yaml.FullLoader)
 import TextBasedAdventureFunctions
 import classes
