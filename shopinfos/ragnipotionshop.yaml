@@ -1,0 +1,34 @@
+ragnipotionshop:
+  items:
+    healing_potion_I:
+      name: "Healing Potion I"
+      price: 5
+      type: "Potion"
+      heal: 3
+      lore: >
+          Heals 3 Health
+
+    mana_potion_I:
+      name: "Mana Potion I"
+      price: 5
+      type: "Potion"
+      restore: 5
+      lore: >
+          Restores 5 Mana
+
+    healing_potion_II:
+      name: "Healing Potion II"
+      price: 7
+      type: "Potion"
+      heal: 5
+      lore: >
+          Heals 5 Health
+
+    mana_potion_II:
+      name: "Mana Potion II"
+      price: 7
+      type: "Potion"
+      restore: 7
+      lore: >
+          Restores 7 Mana
+           

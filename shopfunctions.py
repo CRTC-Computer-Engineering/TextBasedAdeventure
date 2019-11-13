@@ -6,7 +6,7 @@ import items
 import bank
 import character_info
 import yaml
-with open('ragniarmorshop.yaml', 'r') as file:
+with open('shopinfos/ragniarmorshop.yaml', 'r') as file:
     ragni_armor_shop = yaml.load(file, Loader=yaml.FullLoader)
 
 
@@ -248,8 +248,8 @@ def potion_shop(city):
                 store.print_all_potions_ragni()
                 purchase = int(input("Which item catches your eye? "))
                 if purchase == 1:
-                    if balance >= 15:
-                        balance = balance - 15
+                    if balance >= 5:
+                        balance = balance - 5
                         TextBasedAdventureFunctions.blank_line(1)
                         print ("You bought the Healing Potion I!")
                         TextBasedAdventureFunctions.blank_line(1)
@@ -260,8 +260,8 @@ def potion_shop(city):
                         TextBasedAdventureFunctions.blank_line(1)
                         potion_shop(city)
                 elif purchase == 2:
-                    if balance >= 15:
-                        balance = balance - 15
+                    if balance >= 5:
+                        balance = balance - 5
                         TextBasedAdventureFunctions.blank_line(1)
                         print ("You bought the Mana Potion I!")
                         TextBasedAdventureFunctions.blank_line(1)
@@ -272,8 +272,8 @@ def potion_shop(city):
                         TextBasedAdventureFunctions.blank_line(1)
                         continue
                 elif purchase == 3:
-                    if balance >= 15:
-                        balance = balance - 15
+                    if balance >= 7:
+                        balance = balance - 7
                         TextBasedAdventureFunctions.blank_line(1)
                         print ("You bought the Healing Potion II!")
                         TextBasedAdventureFunctions.blank_line(1)
@@ -284,8 +284,8 @@ def potion_shop(city):
                         TextBasedAdventureFunctions.blank_line(1)
                         potion_shop(city)
                 elif purchase == 4:
-                    if balance >= 15:
-                        balance = balance - 15
+                    if balance >= 7
+                        balance = balance - 7
                         TextBasedAdventureFunctions.blank_line(1)
                         print ("You bought the Mana Potion II!")
                         TextBasedAdventureFunctions.blank_line(1)

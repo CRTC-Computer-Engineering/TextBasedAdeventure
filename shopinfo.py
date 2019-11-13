@@ -32,6 +32,22 @@ class ragni_weapon_shop():
         print ("5. Back")
         print ("---------------------------------------------")
 
+#Info for ragni potion shop
+class ragni_wepon_shop():
+    def __init__ (self):
+        self.item1 = ("5G - Healing Potion I")
+        self.item2 = ("5G - Mana Potion I")
+        self.item3 = ("7G - Healing Potion II")
+        self.item4 = ("7G - Mana Potion II")
+    def print_all_potions_ragni(self):
+        print ("---------------------------------------------")
+        print ("1. " + str(self.item1))
+        print ("2. " + str(self.item2))
+        print ("3. " + str(self.item3))
+        print ("4. " + str(self.item4))
+        print ("5. Back")
+        print ("---------------------------------------------")
+
 #Info for delas armor shop
 class detlas_weapon_shop():
     def __init__ (self):
